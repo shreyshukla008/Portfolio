@@ -6,84 +6,331 @@
     <title>PortFolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <div id="wrapper">
 
-        <div class="header">
-            
-            <div class="header-text">
-            <img src="userAsset/NavLogo.jpg" alt="" id="header-name-start">
-            <h3 id="header-name-rest">ohn Doe</h3>
+        <div class="container">
+
+            <div class="header">
+
+                <div class="header-left">
+                    <img class="header-logo" src="./userAsset/NavLogo.jpg" alt="">
+                    <span class="header-name">hrey Shukla</span>
+                </div>
+                <nav class="header-right">
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#contactMe">Contact Me</a>
+                </nav>
             </div>
-            
-            <nav class="navigation">    
-                <h3>Projects</h3>
-                <h3>Skills</h3>
-                <h3>Contact Me</h3>
-            </nav>
+
+            <div class="hero">
+
+                <div class="hero-faded-text">Shrey Shukla</div>
+
+                <div class="hero-left">
+                    <div class="hero-heading">
+                        Hi! Shrey Shukla
+                    </div>
+                    <div class="hero-heading hero-sub-heading">
+                        I am a <span class="role"></span>
+                    </div>
+                    <div class="hero-text">
+                        I’m a software developer and here is my portfolio website. Here you’ll learn about my journey as a software developer.
+                    </div>
+                    <button class="classic-button" id="hero-button">
+                        Hire Me
+                    </button>
+                </div>
+
+                <div class="hero-right">
+                    <div class="title-img">
+                        <img src="./userAsset/UserImage-1.jpg" alt="">
+                    </div>
+                    <div class="absolute circles">
+                        <img src="./userAsset/circle.png" alt="">
+                    </div>
+                    <div class="absolute zig-zag">
+                        <img src="./userAsset/zigzags.png" alt="">
+                    </div>
+                    <div class="absolute plus">
+                        <img src="./userAsset/plus.png" alt="">
+                    </div>
+                    <div class="absolute cube">
+                        <img src="./userAsset/cube.png" alt="">
+                    </div>
+                    <div class="absolute dots">
+                        <img src="./userAsset/dots.png" alt="">
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-        <div class="hero">
+        <div class="projects" id="projects">
 
-            <div class="hero-text">
-                <h2>Hi! John Doe</h2>
-                <h1>I am a</h1>
-                <p>I’m a software developer and here is my portfolio website.<br/> Here you’ll learn about my journey as a software developer.</p>
-                <button id="hero-hire-button" class="hero-hire-button">Hire Me</button>
-            </div>
+            <div class="project-heading">Projects</div>
 
-            <div class="hero-display-image">
-                <img id="hero-display-image-main" src="userAsset/UserImage.png" alt="">
-                <img id="hero-circle" src="userAsset/circle.png" alt="">
-                <img id="hero-dots" src="userAsset/dots.png" alt="">
-                <img id="hero-cube" src="userAsset/cube.png" alt="">
-                <img id="hero-plus" src="userAsset/plus.png" alt="">
-                <img id="hero-zigzags" src="userAsset/zigzags.png" alt="">
+            <!-- <div class="project-container"> -->
+            <div class="container project-container">
+
+                <div class="project-card card-left" id="project-1">
+
+                    <div class="project-no no-right">01</div>
+                    <div class="card-content content-left">
+                        <div class="tech-used-icon">
+                            <img src="./stack/CSS.png" alt="">
+                            <img src="./stack/Express.png" alt="">
+                            <img src="./stack/HTML.png" alt="">
+                            <img src="./stack/React.png" alt="">
+                            <img src="./stack/Tailwind.png" alt="">
+                            <img src="./stack/NextJsCircle.png" alt="">
+                        </div>
+                        <div class="card-heading">
+                            Project-1
+                        </div>
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum pariatur eum vitae necessitatibus ducimus ratione laborum ab possimus tenetur aliquid!
+                        </div>
+                        <div class="button-group">
+                            <button class="classic-button" id="proj-1-read-more">Read More</button>
+                            <a id="Proj-1-git" href="">
+                                <i title="Git Link"class="awesome-icon fa-brands fa-github icon"></i>
+                            </a>
+                            <a id="Proj-1-live-link" href="">
+                                <i title="Live Link" class="awesome-icon fa-solid fa-link icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="project-card card-right" id="project-2">
+
+                    <div class="project-no no-left">02</div>
+                    <div class="card-content content-right">
+                        <div class="tech-used-icon">
+                            <img src="./stack/CSS.png" alt="">
+                            <img src="./stack/Express.png" alt="">
+                            <img src="./stack/HTML.png" alt="">
+                            <img src="./stack/React.png" alt="">
+                            <img src="./stack/Tailwind.png" alt="">
+                            <img src="./stack/NextJsCircle.png" alt="">
+                        </div>
+                        <div class="card-heading">
+                            Project-2
+                        </div>
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum pariatur eum vitae necessitatibus ducimus ratione laborum ab possimus tenetur aliquid!
+                        </div>
+                        <div class="button-group">
+                            <button class="classic-button" id="proj-1-read-more">Read More</button>
+                            <a id="Proj-2-git" href="">
+                                <i title="Git Link"class="awesome-icon fa-brands fa-github icon"></i>
+                            </a>
+                            <a id="Proj-2-live-link" href="">
+                                <i title="Live Link" class="awesome-icon fa-solid fa-link icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="project-card card-left" id="project-3">
+
+                    <div class="project-no no-right">03</div>
+                    <div class="card-content content-left">
+                        <div class="tech-used-icon">
+                            <img src="./stack/CSS.png" alt="">
+                            <img src="./stack/Express.png" alt="">
+                            <img src="./stack/HTML.png" alt="">
+                            <img src="./stack/React.png" alt="">
+                            <img src="./stack/Tailwind.png" alt="">
+                            <img src="./stack/NextJsCircle.png" alt="">
+                        </div>
+                        <div class="card-heading">
+                            Project-3
+                        </div>
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum pariatur eum vitae necessitatibus ducimus ratione laborum ab possimus tenetur aliquid!
+                        </div>
+                        <div class="button-group">
+                            <button class="classic-button" id="proj-1-read-more">Read More</button>
+                            <a id="Proj-3-git" href="">
+                                <i title="Git Link"class="awesome-icon fa-brands fa-github icon"></i>
+                            </a>
+                            <a id="Proj-3-live-link" href="">
+                                <i title="Live Link" class="awesome-icon fa-solid fa-link icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="project-card card-right" id="project-4">
+
+                    <div class="project-no no-left">04</div>
+                    <div class="card-content content-right">
+                        <div class="tech-used-icon">
+                            <img src="./stack/CSS.png" alt="">
+                            <img src="./stack/Express.png" alt="">
+                            <img src="./stack/HTML.png" alt="">
+                            <img src="./stack/React.png" alt="">
+                            <img src="./stack/Tailwind.png" alt="">
+                            <img src="./stack/NextJsCircle.png" alt="">
+                        </div>
+                        <div class="card-heading">
+                            Project-4
+                        </div>
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum pariatur eum vitae necessitatibus ducimus ratione laborum ab possimus tenetur aliquid!
+                        </div>
+                        <div class="button-group">
+                            <button class="classic-button" id="proj-1-read-more">Read More</button>
+                            <a id="Proj-4-git" href="">
+                                <i title="Git Link"class="awesome-icon fa-brands fa-github icon"></i>
+                            </a>
+                            <a id="Proj-4-live-link" href="">
+                                <i title="Live Link" class="awesome-icon fa-solid fa-link icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
-        <div class="project-section">
+        <div class="skills" id="skills">
 
-            <div class="project-heading">
-                <h1>Projects</h1>
+            <div class="skills-faded-text absolute">Skills</div>
+
+            <div class="skills-wrapper container">
+
+                <div class="skills-wrapper-left">
+                    <div class="skills-heading">
+                        <span>M</span>e and
+                        <br/>
+                        My Tech Stack
+                    </div>
+                    <div class="skills-text">
+                        <p>Hi Everyone My name is Shrey Shukla I am a Full Stack Web Developer I have been working for last 3 Years and Currently I am working with a Budding Startup in USA and a full Time Freelancer. Currently I am working on NextJs and Making Beautiful UI-UX are my fey features</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequatur eum, maxime eos tempora qui ad officiis, ipsum quisquam aliquam perspiciatis? Ut quae ipsa omnis odit commodi quisquam sit impedit?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, aut odit. Impedit rerum excepturi accusantium sequi voluptatibus ducimus mollitia aperiam!</p>
+                    </div>
+                </div>
+
+                <div class="skills-wrapper-right">
+                    <div class="skills-icons">
+                        <img src="./stack/CSS.png" alt="">
+                            <img src="./stack/Express.png" alt="">
+                            <img src="./stack/HTML.png" alt="">
+                            <img src="./stack/React.png" alt="">
+                            <img src="./stack/Tailwind.png" alt="">
+                            <img src="./stack/NextJsCircle.png" alt="">
+                            <img src="./stack/CSS.png" alt="">
+                            <img src="./stack/Express.png" alt="">
+                            <img src="./stack/HTML.png" alt="">
+                            <img src="./stack/React.png" alt="">
+                            <img src="./stack/Tailwind.png" alt="">
+                            <img src="./stack/NextJsCircle.png" alt="">
+                            <img src="./stack/CSS.png" alt="">
+                            <img src="./stack/Express.png" alt="">
+                            <img src="./stack/HTML.png" alt="">
+                            <img src="./stack/React.png" alt="">
+                            <img src="./stack/Tailwind.png" alt="">
+                            <img src="./stack/NextJsCircle.png" alt="">
+                            <img src="./stack/CSS.png" alt="">
+                            <img src="./stack/Express.png" alt="">
+                    </div>
+                </div>
+
             </div>
 
-            <div class="project-card">
+        </div>
 
-                <div class="card-num">
-
-                </div>
-                <div class="card-icons">
-
-                </div>
-                <div class="card-heading">
-                    Breaking Copyrights
-                </div>
-                <div class="card-details">
-                    A platform to download copyright free youtube music.
-                </div>
-                <div class="card-btn">
-                    <button class="hero-hire-button">Read More</button>
-                    <i class="git-icon"></i>
-                    <i class="link-icon"></i>
-                </div>
+        <section class="contactMeSection" id="contactMe">
+            <div class="container">
+              <h2>Contact Me</h2>
+              <h3>Questions, Thoughts, Or Just Want To Say Hello?</h3>
+      
+              <div class="contactUsForm">
+                <form action="#">
+                  <div class="formFieldContainer">
+                    <input class="formField" type="text" placeholder="Enter your name" />
+                  </div>
+                  <div class="formFieldContainer">
+                    <input class="formField" type="email" placeholder="Enter your email address" />
+                  </div>
+                  <div class="formFieldContainer">
+                    <input class="formField" type="text" placeholder="Enter your Subject address" />
+                  </div>
+                  <div class="formFieldContainer">
+                    <textarea class="formField" name="message" id="" cols="30" rows="10"
+                      placeholder="Enter your message"></textarea>
+                  </div>
+                  <div class="formBtn">
+                    <button type="submit" class="classic-button" id="submit-btn">
+                      Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
-            
+          </section>
 
-        </div>
-
-        <div class="skills">
-
-        </div>
-
-        <div class="footer">
-
-        </div>
+          <footer>
+            <div class="container footerContainer">
+              <div class="footerFadedText">Shrey Shukla</div>
+              <div class="linkContainer">
+                <div>
+                  <a href="#projects">Projects</a>
+                </div>
+                <div>
+                  <a href="#skills">Skills</a>
+                </div>
+                <div>
+                  <a href="#contactMe">Contact Me</a>
+                </div>
+              </div>
+              <div class="iconContainer">
+                <i class="awesome-icon fa-brands fa-linkedin icon"></i>
+                <i class="awesome-icon fa-brands fa-github icon"></i>
+                <i class="awesome-icon fa-brands fa-twitter icon"></i>
+                <i class="awesome-icon fa-brands fa-instagram icon"></i>
+                <i class="awesome-icon fa-regular fa-envelope icon"></i>
+              </div>
+            </div>
+          </footer>
 
     </div>
+
+
+
+    <!-- importing scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+
+    <!-- script pata nahi kaya hai -->
+    <script>
+        var typeData = new Typed(".role", {
+          strings: [
+            "Full Stack Developer",
+            "Web Developer",
+            "UI-UX Designer",
+            "Backend Developer",
+            "Coder",
+          ],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 1000,
+        });
+      </script>
     
 </body>
 </html>
